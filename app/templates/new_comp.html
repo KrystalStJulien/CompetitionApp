@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<p class="text-center well"> Starting a new competition... NOW! </p>
+	<div class="well">
+		
+		<form>
+  			<fieldset>
+    		<legend>Start New Competition</legend>
+    		<div class="btn-group">
+  				<button class="btn">Skill Category</button>
+  				<button class="btn dropdown-toggle" data-toggle="dropdown">
+    			<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu">
+    			<!-- dropdown menu links -->
+    				<li><a href="#">Social</a></li>
+                    <li><a href="#">Academic</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <!--<li class="divider"></li>-->
+                    <li><a href="#">Frivolous</a></li>
+  				</ul>
+			</div>
+			<br><br><br>
+			
+    		<label>Competition Title</label>     
+    			<input type="text" placeholder="Give your competition a name.">
+    		<br><br><br>
+    		
+    		<div class="btn-group">
+  				<button class="btn">Scoring Management</button>
+  				<button class="btn dropdown-toggle" data-toggle="dropdown">
+    			<span class="caret"></span>
+  				</button>
+  				<ul class="dropdown-menu">
+    			<!-- dropdown menu links -->
+    				<li><a href="#">Commissioner Submissions</a></li>
+                    <li><a href="#">Commissioner Approval</a></li>
+                    <li><a href="#">Individual Scoring</a></li>
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="#">Frivolous</a></li>-->
+  				</ul>
+			</div>
+			<br><br><br>
+    		
+    		<label> Rules </label> 
+    			<textarea rows="5"></textarea>
+    		<br><br>  
+    			<!--<input type="text" placeholder="Give your competition a name.">
+    		<span class="help-block">Example block-level help text here.</span>-->
+    		<label class="checkbox">
+      			<input type="checkbox"> Store competition specs for others to use.
+    		</label>
+    		<br><br>
+    		<button type="submit" class="btn">Submit</button>
+  			</fieldset>
+		</form>
+		
+	</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>{{title}} - Competition App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"  type="text/css"> -->
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+  	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script> 
+  	<script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+	<div class="navbar">
+	  <div class="navbar-inner">
+	    <a class="brand" href="index">iWIN/uLOSE</a>
+	    <ul class="nav pull-right navbar-text">
+	      <li><a href="profile">Competition Profile</a></li>
+	      <li><a href="new_competition">Start New Competition</a></li>
+	      <li><a href="points">Add/Request Points</a></li>
+	    </ul>
+	  </div>
+	</div>
+      {% block content %}{% endblock %}
+  </body>
+</html>
