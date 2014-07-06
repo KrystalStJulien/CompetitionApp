@@ -1,50 +1,66 @@
 {% extends "base.html" %}
 {% block content %}
 
-	<p class="text-center well"> Starting a new competition... NOW! </p>
-	<div class="well">
+	<!--<p class="text-center well"> Starting a new competition... NOW! </p>-->
+	<div class="row-fluid">
+	<div class="well span6 offset3">
 		
 		<form>
   			<fieldset>
-    		<legend>Start New Competition</legend>
-    		<div class="btn-group">
+    		<legend class='text-center'>Start New Competition</legend>
+    		<!--<div class="btn-group">
   				<button class="btn">Skill Category</button>
   				<button class="btn dropdown-toggle" data-toggle="dropdown">
     			<span class="caret"></span>
-  				</button>
-  				<ul class="dropdown-menu">
-    			<!-- dropdown menu links -->
+  				</button>-->
+  				
+  				<select class='span12'>
+  					<option>Social</option>
+  					<option>Academic</option>
+ 					<option>Volunteer</option>
+  					<option>Frivolous</option>
+				</select>
+				
+  				<!--<ul class="dropdown-menu">
+    			<!-- dropdown menu links 
     				<li><a href="#">Social</a></li>
                     <li><a href="#">Academic</a></li>
                     <li><a href="#">Volunteer</a></li>
-                    <!--<li class="divider"></li>-->
+                    <!--<li class="divider"></li>
                     <li><a href="#">Frivolous</a></li>
   				</ul>
-			</div>
+			</div>-->
 			<br><br><br>
 			
     		<label>Competition Title</label>     
-    			<input type="text" placeholder="Give your competition a name.">
+    			<input type="text" placeholder="Give your competition a name." class='span12'>
     		<br><br><br>
     		
-    		<div class="btn-group">
+    		<select class='span12'>
+  				<option>Commissioner Submits Scores</option>
+  				<option>Commissioner Approves Scores</option>
+ 				<option>Individual Members Submit Scores</option>
+  				<option>Members Approve Scores</option>
+			</select>
+				
+    		<!--<div class="btn-group">
   				<button class="btn">Scoring Management</button>
   				<button class="btn dropdown-toggle" data-toggle="dropdown">
     			<span class="caret"></span>
   				</button>
   				<ul class="dropdown-menu">
-    			<!-- dropdown menu links -->
+    			<!-- dropdown menu links 
     				<li><a href="#">Commissioner Submissions</a></li>
                     <li><a href="#">Commissioner Approval</a></li>
                     <li><a href="#">Individual Scoring</a></li>
-                    <!--<li class="divider"></li>-->
-                    <!--<li><a href="#">Frivolous</a></li>-->
+                    <!--<li class="divider"></li>
+                    <!--<li><a href="#">Frivolous</a></li>
   				</ul>
-			</div>
+			</div>-->
 			<br><br><br>
     		
     		<label> Rules </label> 
-    			<textarea rows="5"></textarea>
+    			<textarea class='span12' rows="5"></textarea>
     		<br><br>  
     			<!--<input type="text" placeholder="Give your competition a name.">
     		<span class="help-block">Example block-level help text here.</span>-->
@@ -52,10 +68,11 @@
       			<input type="checkbox"> Store competition specs for others to use.
     		</label>
     		<br><br>
-    		<button type="submit" class="btn">Submit</button>
+    		<button type="submit" class="btn"><a href='competition_home'>Submit</a></button>
   			</fieldset>
+  			
 		</form>
 		
 	</div>
-
+	</div>
 {% endblock %}

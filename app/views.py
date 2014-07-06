@@ -20,3 +20,7 @@ def profile():
 @app.route('/points')
 def points():
     return render_template("points.html")
+
+@app.route('/competition_home')
+def comp_home():
+    return render_template("comp_home.html")
